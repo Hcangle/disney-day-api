@@ -7,8 +7,8 @@ end
 
     # create "log in"
 def create
-    user = User.create(user_id: params["user_id"])
-    render :json => users
+    user = User.create(username: params[:user])
+    render :json => user
     #create the form for the user name then hide that form to display other 
 end 
 

@@ -26,9 +26,12 @@ ActiveRecord::Schema.define(version: 2020_12_05_031815) do
   end
 
   create_table "disney_days", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "day"
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "username"
   end
 
 end
